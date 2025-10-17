@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Display & Position Example</title>
+  <style>
+    /* Display Examples */
+    .box1 {
+      display: block;
+      width: 200px;
+      height: 50px;
+      background-color: lightblue;
+      margin-bottom: 10px;
+    }
+
+    .box2 {
+      display: inline;
+      width: 200px;
+      height: 50px;
+      background-color: lightgreen;
+      color: white;
+      padding: 10px;
+    }
+
+    .box3 {
+      display: inline-block;
+      width: 200px;
+      height: 50px;
+      background-color: coral;
+      margin-left: 10px;
+      color: white;
+      text-align: center;
+      line-height: 50px;
+    }
+
+    /* Position Examples */
+    .relative-box {
+      position: relative;
+      top: 20px;
+      left: 20px;
+      width: 150px;
+      height: 50px;
+      background-color: yellow;
+      margin-bottom: 10px;
+    }
+
+    .absolute-box {
+      position: absolute;
+      top: 200px;
+      left: 50px;
+      width: 150px;
+      height: 50px;
+      background-color: pink;
+    }
+
+    .fixed-box {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 150px;
+      height: 50px;
+      background-color: purple;
+      color: white;
+      text-align: center;
+      line-height: 50px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h2>Display Examples</h2>
+  <div class="box1">Block</div>
+  <span class="box2">Inline</span>
+  <div class="box3">Inline-Block</div>
+
+  <h2>Position Examples</h2>
+  <div class="relative-box">Relative</div>
+  <div class="absolute-box">Absolute</div>
+  <div class="fixed-box">Fixed</div>
+
+  <p>Scroll down to see the fixed box stay at the top-right corner.</p>
+  <p style="margin-top: 300px;">More content to enable scrolling...</p>
+
+</body>
+</html>
